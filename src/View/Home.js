@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavScrollExample from '../components/Navbar/NavbarO';
 import Slider from '../components/Slider/Slider';
 import Cartas from '../components/Cards/Cartas';
 import Footer from '../components/Footer/Footer';
@@ -15,7 +14,7 @@ import darth from '../components/Imagen/darth.jpg';
 const Home = () => {
   return (
     <div>
-        <NavScrollExample />
+      
 
         <div className='container'>
         <Slider/>

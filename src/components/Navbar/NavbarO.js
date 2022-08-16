@@ -4,13 +4,14 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {Link} from 'react-router-dom'
+import logo from '../Imagen/logo.png';
+import {Link} from 'react-router-dom';
 
 function NavScrollExample() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="success" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <img width={80} className='d-inline' src={logo}/>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,9 +19,10 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
              >
-            <Link to="/" href="">Inicio</Link>
-            <Link to="personajes" href="">Personajes</Link>
-            <Link to="planetas" href="">Planetas</Link>
+            <Link className='nav-link text-light' to="/" href="">Inicio</Link>
+            <Link className='nav-link text-light' to="personajes" href="">Personajes</Link>
+            <Link className='nav-link text-light' to="planetas" href="">Planetas</Link>
+           
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -29,7 +31,7 @@ function NavScrollExample() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-light">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
