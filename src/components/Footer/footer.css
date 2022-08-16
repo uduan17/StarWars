@@ -1,0 +1,20 @@
+.text-muted{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.text-muted p{
+    color: white;
+}
+
+.text-center{
+ background-color:  rgb(64, 83, 77);
+}
+
+.text-center p{
+    color: white;
+}
+
+.Card.Body{
+    background-color: rgb(105, 131, 179);
+}
