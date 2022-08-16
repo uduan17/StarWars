@@ -14,7 +14,7 @@ function BasicExample({text,title,Buttons,image}) {
         <Card.Text>
          {text}
         </Card.Text>
-        <Button  className='justify-content-center' variant="dark">{Buttons}</Button>
+        <Button  className='justify-content-center' variant="light">{Buttons}</Button>
       </Card.Body>
       </div>
     </Card>

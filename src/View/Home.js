@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from '../components/Slider/Slider';
 import Cartas from '../components/Cards/Cartas';
-import Footer from '../components/Footer/Footer';
 import Texto from '../components/Texto/Parrafo';
 import React from 'react'
 import './style.css'
@@ -50,11 +49,7 @@ const Home = () => {
         Buttons = "Ver mas..."
         />
         </div>
-
-        <br></br>
-
-        <Footer/>
-       
+      
     </div>
   )
 }

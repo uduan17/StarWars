@@ -2,16 +2,13 @@ import React from 'react'
 import { useState } from 'react';
 
 export const usePeople = () => {
-  
     const [dataPeople, setDataPeople] = useState([])
 
     const getAllPerson= () =>{   
-        
         var requestOptions = {
             method: 'GET',
             redirect: 'follow'
         };
-          
           fetch("https://swapi.dev/api/people", requestOptions)
             .then(response => response.json())
             .then(result => setDataPeople(result.results))
@@ -19,8 +16,6 @@ export const usePeople = () => {
     }
 
     return{
-        getAllPerson,
-        dataPeople
-    };
-
-};
+        getAllPerson,dataPeople
+    }
+}

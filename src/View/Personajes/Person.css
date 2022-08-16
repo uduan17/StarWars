@@ -1,8 +1,14 @@
 .content{
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
 }
 
 .card{
-    justify-content: center;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+    transition: all 600ms;
+
+}
+.cartas{
+    text-align: center;  
 }
