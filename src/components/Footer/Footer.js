@@ -1,18 +1,29 @@
-import Card from 'react-bootstrap/Card';
 import './footer.css';
+import logo from '../Imagen/logo.png'
+import { BsGithub } from 'react-icons/bs'
+import { CgMail } from 'react-icons/cg'
+import { FaFacebookF } from 'react-icons/fa'
 
 function HeaderAndFooterExample() {
   return (
-    <Card className="text-center">
-      <Card.Body>
-        <Card.Title><p>Jose Uduan Hurtado</p></Card.Title>
-        <Card.Text>
-         Aprendiendo a programar
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer className="text-muted"> <p>Todos los derechos reservados ©2022</p></Card.Footer>
-    </Card>
+<div className='bg-black'>
+  <div className='d-flex contenedor flex-wrapp text-light align-items-center' >
+    <div className="p-4">
+    <img width={80} className='d-inline' src={logo}/>
+    </div>
+    <div className="p-4">
+    <h3>Jose Uduan Hurtado</h3>
+        <p>Mi Primera Api</p>
+    </div>
+      <div className='text-light p-4'>
+      <CgMail size={40}/>
+      <BsGithub size={30}/>
+      <FaFacebookF size={30}/>
+    </div>
+  </div>
+   <p className='text-center bg-black text-light'>Todos los derechos reservados@2022</p>
+</div>
   );
-}
+};
 
 export default HeaderAndFooterExample;

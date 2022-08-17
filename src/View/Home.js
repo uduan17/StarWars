@@ -38,7 +38,7 @@ const Home = () => {
         <Cartas
         image={yoda} 
         text = "Warzone es un videojuego de disparos en primera persona, perteneciente al género Battle royale gratuito, lanzado el 10 de marzo de 2020."
-        title = "Call of duty: Warzone"
+        title = "yoda"
         Buttons = "Ver mas..."
         />
 
