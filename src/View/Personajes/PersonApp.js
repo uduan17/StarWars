@@ -9,8 +9,7 @@ import './Person.css'
 
 export const PersonApp = () => {
 
-  const { getAllPerson, page, person, siguiente,
-    anterior} =  usePeople();
+  const { getAllPerson, page, person, siguiente, anterior} =  usePeople();
 
   
   useEffect(()=>{
@@ -50,10 +49,10 @@ export const PersonApp = () => {
       ))} 
  
     </div>
-  <div className='d-flex mb-4 contenedor' >
-            <Button className="page-link bg-dark text-light" onClick={anterior}>Anterior</Button>
-              <strong className="page-link">{page}</strong>
-            <Button className="page-link bg-dark text-light"  onClick={siguiente}>Siguiente</Button>
+  <div className='d-flex mb-4  justify-content-center ' >
+            <Button className="page-link bg-warning text-dark p-3" onClick={anterior}>Anterior</Button>
+              <h1 className="page-link p-3">{page}</h1>
+            <Button className="page-link bg-warning text-dark p-3"  onClick={siguiente}>Siguiente</Button>
             </div>
     </div>
     

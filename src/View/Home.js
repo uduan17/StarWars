@@ -13,8 +13,6 @@ import darth from '../components/Imagen/darth.jpg';
 const Home = () => {
   return (
     <div>
-      
-
         <div className='container'>
         <Slider/>
         </div>

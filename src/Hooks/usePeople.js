@@ -15,10 +15,7 @@ export const usePeople = () => {
       }
     };
     const siguiente = () => {
-  
-      if(page >=9){
-        
-      }else if(page===9){
+      if(page >=9){ 
       }
       else{
         setPage(page + 1);
