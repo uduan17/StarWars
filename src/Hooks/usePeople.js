@@ -37,6 +37,6 @@ export const usePeople = () => {
 
     return{
         getAllPerson, page, person,siguiente,
-        anterior
+        anterior,
     }
 }

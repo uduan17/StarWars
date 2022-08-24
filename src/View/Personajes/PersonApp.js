@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import vader from '../../components/Imagen/vader.jpg'
 import './Person.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,7 +41,7 @@ export const PersonApp = () => {
               <strong>Año de nacimiento:</strong> {people.birth_year} <br></br>
               <strong>Genero:</strong> {people.gender}
              </Card.Text>
-             <Button variant="light">Ver mas...</Button>
+             <Link className='nav-link text-light' to="/detailsperson" href=""><Button variant="light">Ver mas...</Button></Link>
            </Card.Body>
            </div>
          </Card>

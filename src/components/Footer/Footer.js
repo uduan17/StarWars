@@ -7,15 +7,15 @@ import { FaFacebookF } from 'react-icons/fa'
 function HeaderAndFooterExample() {
   return (
 <div className='bg-black'>
-  <div className='d-flex contenedor flex-wrapp text-light align-items-center' >
-    <div className="p-4">
+  <div className='d-flex  flex-wrapp text-light  contenedor' >
+    <div className="p-5">
     <img width={80} className='d-inline' src={logo}/>
     </div>
     <div className="p-4">
     <h3>Jose Uduan Hurtado</h3>
         <p>Mi Primera Api</p>
     </div>
-      <div className='text-light p-4'>
+      <div className='text-light p-5'>
       <CgMail size={40}/>
       <BsGithub size={30}/>
       <FaFacebookF size={30}/>
