@@ -1,5 +1,4 @@
 .content{
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -7,6 +6,7 @@
     text-align: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
     transition: all 600ms;
+    border-radius: 10px;
 
 }
 
@@ -16,3 +16,15 @@
      /* width: 100%;  */
     }
 
+    .card-text::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    .card-text::-webkit-scrollbar:vertical {
+        width:10px;
+    }
+    .card-text::-webkit-scrollbar-thumb {
+        background-color: #797979;
+        border-radius: 20px;
+        border: 2px solid #f1f2f3;
+    }
+    

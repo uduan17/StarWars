@@ -1,8 +1,11 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
+import { userParams } from 'react-router-dom'
+
 
 const DetailsPerson = () => {
+
 
   return (
     
@@ -15,12 +18,7 @@ const DetailsPerson = () => {
       <div >
         <h1 className='text-center bg-white'>Person Name </h1>
       </div>
-
-
-
-
     </div>
-   
   )
 }
 

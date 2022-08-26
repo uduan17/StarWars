@@ -34,7 +34,7 @@ export const usePeople = () => {
             .then(result => setPerson(result.results))
             .catch(error => console.log('error', error));
     }
-
+    
     return{
         getAllPerson, page, person,siguiente,
         anterior,

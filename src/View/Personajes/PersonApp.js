@@ -6,11 +6,9 @@ import vader from '../../components/Imagen/vader.jpg'
 import './Person.css'
 import { Link } from 'react-router-dom';
 
-
-
 export const PersonApp = () => {
 
-  const { getAllPerson, page, person, siguiente, anterior} =  usePeople();
+  const { getAllPerson, page, person, siguiente, anterior  } =  usePeople();
 
   
   useEffect(()=>{
@@ -26,7 +24,7 @@ export const PersonApp = () => {
 
       {person.map((people) => (
 
-      <div className='card mb-4'>
+      <div className='card mb-4 border-radius'>
          <Card style={{width: '18rem'}}>
            <div className='bg-dark text-light'>
            <Card.Img variant="top" src={vader}/>
@@ -41,12 +39,11 @@ export const PersonApp = () => {
               <strong>Año de nacimiento:</strong> {people.birth_year} <br></br>
               <strong>Genero:</strong> {people.gender}
              </Card.Text>
-             <Link className='nav-link text-light' to="/detailsperson" href=""><Button variant="light">Ver mas...</Button></Link>
+             <Link className='nav-link text-light' to={`/detailsperson`} href=""><Button variant="light">Ver mas...</Button></Link>
            </Card.Body>
            </div>
          </Card>
          </div>
-
       ))} 
  
     </div>
