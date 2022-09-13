@@ -1,0 +1,16 @@
+.image{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.contenedor{
+    width: 40%;
+    justify-content: center;
+
+    
+}
+.center{justify-content: center;
+
+width: 45%;
+
+}

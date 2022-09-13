@@ -3,8 +3,8 @@ import React from 'react'
 const Parrafo = () => {
   return (
     <div>
-      <h1>Star Wars</h1>
-      <p>Star Wars, conocida también en español como La guerra de las galaxias,
+      <h1 className='text-center bg-white'>Star Wars</h1>
+      <p className='text-center bg-white'>Star Wars, conocida también en español como La guerra de las galaxias,
          es una franquicia y universo compartido compuesta primordialmente de 
          una serie de películas concebidas por el cineasta estadounidense George
           Lucas en la década de 1970, y producidas y distribuidas por The Walt

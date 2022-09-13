@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 export const PersonApp = () => {
 
-  const { getAllPerson, page, person, siguiente, anterior  } =  usePeople();
+  const { getAllPerson, page, person, siguiente, anterior } =  usePeople();
 
   
   useEffect(()=>{
@@ -31,15 +31,15 @@ export const PersonApp = () => {
            <Card.Body>
              <Card.Text>
               <strong>Nombre:</strong> {people.name} <br></br>
-              <strong>Altura:</strong> {people.height} <br></br>
-              <strong>Peso:</strong> {people.mass} <br></br>
+              <strong>Altura:</strong> {people.height} cm<br></br>
+              <strong>Peso:</strong> {people.mass} kg<br></br>
               <strong>color de pelo:</strong> {people.hair_color} <br></br>
               <strong>Color de piel:</strong> {people.skin_color} <br></br>
               <strong>Color de ojos:</strong> {people.eye_color} <br></br>
               <strong>Año de nacimiento:</strong> {people.birth_year} <br></br>
               <strong>Genero:</strong> {people.gender}
              </Card.Text>
-             <Link className='nav-link text-light' to={`/detailsperson`} href=""><Button variant="light">Ver mas...</Button></Link>
+             <Link className='nav-link text-light' to={`/detailsperson/${people.name}/${page}`}  href=""><Button variant="light">Ver mas...</Button></Link>
            </Card.Body>
            </div>
          </Card>
